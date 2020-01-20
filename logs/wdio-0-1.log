@@ -1,0 +1,30 @@
+2020-01-19T00:53:32.699Z INFO @wdio/local-runner: Run worker command: run
+2020-01-19T00:53:33.476Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-01-19T00:53:33.490Z INFO webdriver: [POST] http://127.0.0.1:4444/session
+2020-01-19T00:53:33.493Z INFO webdriver: DATA {
+  capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
+  desiredCapabilities: { browserName: 'chrome' }
+}
+2020-01-19T00:53:34.370Z INFO @wdio/local-runner: Received SIGINT, giving process 5000ms to shutdown gracefully
+2020-01-19T00:53:34.374Z INFO @wdio/local-runner: Run worker command: endSession
+2020-01-19T00:53:34.529Z WARN webdriver: Request failed due to read ECONNRESET
+2020-01-19T00:53:34.529Z INFO webdriver: Retrying 1/3
+2020-01-19T00:53:34.529Z INFO webdriver: [POST] http://127.0.0.1:4444/session
+2020-01-19T00:53:34.529Z INFO webdriver: DATA {
+  capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
+  desiredCapabilities: { browserName: 'chrome' }
+}
+2020-01-19T00:53:36.568Z WARN webdriver: Request failed due to connect ECONNREFUSED 127.0.0.1:4444
+2020-01-19T00:53:36.568Z INFO webdriver: Retrying 2/3
+2020-01-19T00:53:36.569Z INFO webdriver: [POST] http://127.0.0.1:4444/session
+2020-01-19T00:53:36.569Z INFO webdriver: DATA {
+  capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
+  desiredCapabilities: { browserName: 'chrome' }
+}
+2020-01-19T00:53:38.578Z WARN webdriver: Request failed due to connect ECONNREFUSED 127.0.0.1:4444
+2020-01-19T00:53:38.579Z INFO webdriver: Retrying 3/3
+2020-01-19T00:53:38.579Z INFO webdriver: [POST] http://127.0.0.1:4444/session
+2020-01-19T00:53:38.579Z INFO webdriver: DATA {
+  capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
+  desiredCapabilities: { browserName: 'chrome' }
+}
