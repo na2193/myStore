@@ -69,9 +69,6 @@ describe('Testing validation messages for Registration Form', () => {
         for(var i = 0; i < uiErrMsgs.length; i++) {
             compare( );
         }
-
-
-
         if(JSON.stringify(uiErrMsgs) == JSON.stringify(expectedErrMsgs))    
             assert.isTrue(true, 'The 8 validation messages are the same as expected');
         else    
@@ -82,9 +79,44 @@ describe('Testing validation messages for Registration Form', () => {
     });
 
     it('When entering first Name, the error message should not include first name', () => { 
-        Register.firstName.addValue('John');
+        Register.personalInfo_firstName.addValue('John');
         Register.registerBtn.click();
         let uiErrMsgs = Register.listOfErrorMsgs;
         expect(uiErrMsgs).to.be.oneOf(expectedErrMsgs);
+    });
+});
+
+describe('Enter valid data for registration form and register', () => {
+    it('Should clear all fields', () => {
+        Register.clearAllRegistrationFields();
+    });
+
+    it('Should enter valid data', () => {
+        // probably store these data in a db or excel 
+        // and convert the data to map
+        let registrationData = new Map();
+        registrationData.set('firstName', 'John');
+        registrationData.set('lastName', 'Doe');
+        registrationData.set('email', 'johnDoe21@yahoo.com');
+        registrationData.set('password', 'JohnDoe1');
+        registrationData.set('dateOfBirth', '05/21/1998');
+        registrationData.set('address', '123 Street Road');
+        registrationData.set('city', 'Springfield');
+        registrationData.set('state', 'Virginia');
+        registrationData.set('zipCode', '20155');
+        registrationData.set('country', 'United States');
+        registrationData.set('mobilePhone', '571-888-9080');
+        registrationData.set('alias', 'John Doe Info');
+    });
+
+    it('Should click on Register', () => {
+        this.waitUntilElementisClickable(this.submitBtn, 'Register Button');
+        this.submitBtn.click();
+    });
+
+    it('Should validate Registration Successfull', () => {
+        expect(Register.myAccountInfoMsg.getText()).to.equal('Welcome to your account. Here you can manage all of your personal information and orders.');
+        expect(Register.myAccountName.getText()).to.equal('John Doe');
+
     });
 });
