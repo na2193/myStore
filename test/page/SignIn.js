@@ -4,7 +4,8 @@ class SignIn extends BasePage {
     goToPage() {
         super.goToPage(this.signInLink, 'Sign in Link');
     }
-
+    
+    get signInLink() { return $('.login'); }
     get email() { return $('#email'); }
     get password() { return $('#passwd'); }
     get signInBtn() { return $('#SubmitLogin'); }

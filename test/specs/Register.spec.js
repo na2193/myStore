@@ -67,24 +67,125 @@ describe('Testing validation messages for Registration Form', () => {
 
         let uiErrMsgs = Register.listOfErrorMsgs;
         for(var i = 0; i < uiErrMsgs.length; i++) {
-            compare( );
+            if(uiErrMsgs[i].getText() === expectedErrMsgs[i]) {
+               // console.log('UI -> ' + uiErrMsgs[i].getText());
+                //console.log('DATA -> ' + expectedErrMsgs[i]);
+                assert.isTrue(true, 'The 8 validation messages are the same as expected');
+            }
+            else {
+                //console.log('UI -> ' + uiErrMsgs[i].getText());
+                //console.log('DATA -> ' + expectedErrMsgs[i]);
+                assert.fail('The 8 validation messages are NOT the same as the expected values');
+            }
         }
-        if(JSON.stringify(uiErrMsgs) == JSON.stringify(expectedErrMsgs))    
-            assert.isTrue(true, 'The 8 validation messages are the same as expected');
-        else    
-            assert.fail('The 8 validation messages are NOT the same as the expected values');
-   
-        // for some reason, this below does not work
-        // expect(expectedErrMsgs).to.have.members(uiErrMsgs);
     });
 
     it('When entering first Name, the error message should not include first name', () => { 
         Register.personalInfo_firstName.addValue('John');
         Register.registerBtn.click();
         let uiErrMsgs = Register.listOfErrorMsgs;
-        expect(uiErrMsgs).to.be.oneOf(expectedErrMsgs);
+
+        uiErrMsgs.forEach(element => {
+            expect(element.getText()).to.be.oneOf(expectedErrMsgs);
+            assert.notEqual(element.getText(), 'firstname is required.', 'The First Name error message is displayed in the error list as NOT Expected');
+        });
+    });
+
+    it('When entering last Name, the error message should not include last name', () => { 
+        Register.personalInfo_lastName.addValue('Doe');
+        Register.registerBtn.click();
+        let uiErrMsgs = Register.listOfErrorMsgs;
+
+        uiErrMsgs.forEach(element => {
+            expect(element.getText()).to.be.oneOf(expectedErrMsgs);
+            assert.notEqual(element.getText(), 'lastname is required.', 'The Last Name error message is displayed in the error list as NOT Expected');
+        });
+    });
+
+    it('When entering password, the error message should not include password', () => { 
+        Register.personalInfo_password.addValue('password123');
+        Register.registerBtn.click();
+        let uiErrMsgs = Register.listOfErrorMsgs;
+    
+        uiErrMsgs.forEach(element => {
+            expect(element.getText()).to.be.oneOf(expectedErrMsgs);
+            assert.notEqual(element.getText(), 'passwd is required.', 'The Password error message is displayed in the error list as NOT Expected');
+        });
+    });
+    
+    it('When entering address, the error message should not include address', () => { 
+        Register.address.addValue('123 street road');
+        Register.registerBtn.click();
+        let uiErrMsgs = Register.listOfErrorMsgs;
+    
+        uiErrMsgs.forEach(element => {
+            expect(element.getText()).to.be.oneOf(expectedErrMsgs);
+            assert.notEqual(element.getText(), 'address1 is required.', 'The Address error message is displayed in the error list as NOT Expected');
+        });
+    });
+
+    it('When entering city, the error message should not include city ', () => { 
+        Register.city.addValue('Springfield');
+        Register.registerBtn.click();
+        let uiErrMsgs = Register.listOfErrorMsgs;
+    
+        uiErrMsgs.forEach(element => {
+            expect(element.getText()).to.be.oneOf(expectedErrMsgs);
+            assert.notEqual(element.getText(), 'city is required.', 'The City error message is displayed in the error list as NOT Expected');
+        });
+    });
+
+    it('When entering zip code, the error message should not include zip code', () => { 
+        Register.zipCode.addValue('20122');
+        Register.registerBtn.click();
+        let uiErrMsgs = Register.listOfErrorMsgs;
+    
+        uiErrMsgs.forEach(element => {
+            expect(element.getText()).to.be.oneOf(expectedErrMsgs);
+            assert.notEqual(element.getText(), "The Zip/Postal code you've entered is invalid. It must follow this format: 00000", 'The Zip Code error message is displayed in the error list as NOT Expected');
+        });
+    });
+
+    it('When entering country, the error message should not include country', () => { 
+        Register.country.selectByVisibleText('United States');
+        Register.registerBtn.click();
+        let uiErrMsgs = Register.listOfErrorMsgs;
+    
+        uiErrMsgs.forEach(element => {
+            expect(element.getText()).to.be.oneOf(expectedErrMsgs);
+            assert.notEqual(element.getText(), 'This country requires you to choose a State.', 'The Country error message is displayed in the error list as NOT Expected');
+        });
+    });
+
+    it('When entering all the fields with an existing email, the email address should be displayed', () => { 
+        Register.clearAllRegistrationFields();
+        let registrationData = new Map();
+        registrationData.set('firstName', 'John');
+        registrationData.set('lastName', 'Doe');
+        registrationData.set('email', 'johnDoe21@yahoo.com');
+        registrationData.set('password', 'JohnDoe1');
+        registrationData.set('dateOfBirth', '5/21/1998');
+        registrationData.set('address', '123 Street Road');
+        registrationData.set('city', 'Springfield');
+        registrationData.set('state', 'Virginia');
+        registrationData.set('zipCode', '20155');
+        registrationData.set('country', 'United States');
+        registrationData.set('mobilePhone', '571-888-9080');
+        registrationData.set('alias', 'John Doe Info');
+
+        Register.fillOutRegistrationForm(registrationData);
+        Register.waitUntilElementisClickable(Register.submitBtn, 'Register Button');
+        Register.submitBtn.click();
+
+        let uiErrMsgs = Register.listOfErrorMsgs;
+    
+        uiErrMsgs.forEach(element => {
+            expect(element.getText()).to.equal('An account using this email address has already been registered.');
+        });
     });
 });
+
+
 
 describe('Enter valid data for registration form and register', () => {
     it('Should clear all fields', () => {
@@ -99,7 +200,7 @@ describe('Enter valid data for registration form and register', () => {
         registrationData.set('lastName', 'Doe');
         registrationData.set('email', 'johnDoe21@yahoo.com');
         registrationData.set('password', 'JohnDoe1');
-        registrationData.set('dateOfBirth', '05/21/1998');
+        registrationData.set('dateOfBirth', '5/21/1998');
         registrationData.set('address', '123 Street Road');
         registrationData.set('city', 'Springfield');
         registrationData.set('state', 'Virginia');
@@ -107,14 +208,17 @@ describe('Enter valid data for registration form and register', () => {
         registrationData.set('country', 'United States');
         registrationData.set('mobilePhone', '571-888-9080');
         registrationData.set('alias', 'John Doe Info');
+
+        Register.fillOutRegistrationForm(registrationData);
     });
 
     it('Should click on Register', () => {
-        this.waitUntilElementisClickable(this.submitBtn, 'Register Button');
-        this.submitBtn.click();
+        Register.waitUntilElementisClickable(Register.submitBtn, 'Register Button');
+        Register.submitBtn.click();
     });
 
     it('Should validate Registration Successfull', () => {
+        Register.waitUntilElementVisible(Register.myAccountInfoMsg);
         expect(Register.myAccountInfoMsg.getText()).to.equal('Welcome to your account. Here you can manage all of your personal information and orders.');
         expect(Register.myAccountName.getText()).to.equal('John Doe');
 

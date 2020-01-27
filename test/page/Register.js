@@ -19,7 +19,7 @@ class Register extends BasePage {
     get personalInfo_email() { return $('#email'); }
     get personalInfo_password() { return $('#passwd'); }
     get personalInfo_dobDays() { return $('#days'); }
-    get personalInfo_dobMonth() { return $('#months-months'); }
+    get personalInfo_dobMonth() { return $('#months'); }
     get personalInfo_dobYears() { return $('#years') }
     get address_FirstName() { return $('#firstname'); }
     get address_LastName() { return $('#lastname'); }
@@ -43,7 +43,7 @@ class Register extends BasePage {
         this.personalInfo_dobMonth.selectByVisibleText('-');
         this.personalInfo_dobYears.selectByVisibleText('-');
         this.address_FirstName.clearValue();
-        this.this.address_LastName.clearValue();.clearValue();
+        this.address_LastName.clearValue();
         this.address.clearValue();
         this.city.clearValue();
         this.state.selectByVisibleText('-');
@@ -68,11 +68,12 @@ class Register extends BasePage {
         this.address_LastName.addValue(data.get('lastName'));
         this.address.addValue(data.get('address'));
         this.city.addValue(data.get('city'));
-        this.state.selectByVisibleText(data.get('state'));
-        this.zipCode.addValue(data.get('zipCode'));
         this.country.selectByVisibleText(data.get('country'));
         this.mobilePhone.addValue(data.get('mobilePhone'));
         this.address_Alias.addValue(data.get('alias'));
+        // need to add these 2 last because for some reason, those 2 fields do not show up until others are filled
+        this.state.selectByVisibleText(data.get('state'));
+        this.zipCode.addValue(data.get('zipCode'));
     }
 }
 

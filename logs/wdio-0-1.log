@@ -1,30 +1,1487 @@
-2020-01-19T00:53:32.699Z INFO @wdio/local-runner: Run worker command: run
-2020-01-19T00:53:33.476Z INFO webdriverio: Initiate new session using the webdriver protocol
-2020-01-19T00:53:33.490Z INFO webdriver: [POST] http://127.0.0.1:4444/session
-2020-01-19T00:53:33.493Z INFO webdriver: DATA {
+2020-01-24T23:10:17.058Z INFO @wdio/local-runner: Run worker command: run
+2020-01-24T23:10:17.472Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-01-24T23:10:17.476Z INFO webdriver: [POST] http://127.0.0.1:4444/session
+2020-01-24T23:10:17.476Z INFO webdriver: DATA {
   capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
   desiredCapabilities: { browserName: 'chrome' }
 }
-2020-01-19T00:53:34.370Z INFO @wdio/local-runner: Received SIGINT, giving process 5000ms to shutdown gracefully
-2020-01-19T00:53:34.374Z INFO @wdio/local-runner: Run worker command: endSession
-2020-01-19T00:53:34.529Z WARN webdriver: Request failed due to read ECONNRESET
-2020-01-19T00:53:34.529Z INFO webdriver: Retrying 1/3
-2020-01-19T00:53:34.529Z INFO webdriver: [POST] http://127.0.0.1:4444/session
-2020-01-19T00:53:34.529Z INFO webdriver: DATA {
-  capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
-  desiredCapabilities: { browserName: 'chrome' }
+2020-01-24T23:10:26.220Z INFO webdriver: COMMAND findElement("css selector", ".login")
+2020-01-24T23:10:26.221Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:26.221Z INFO webdriver: DATA { using: 'css selector', value: '.login' }
+2020-01-24T23:10:26.268Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":".login"}\n' +
+    '  (Session info: chrome=79.0.3945.130)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x001AA113+1548563]\n' +
+    '\tOrdinal0 [0x0012DDA1+1039777]\n' +
+    '\tOrdinal0 [0x000AE485+517253]\n' +
+    '\tOrdinal0 [0x00048539+99641]\n' +
+    '\tOrdinal0 [0x00063BB0+211888]\n' +
+    '\tOrdinal0 [0x000597B0+169904]\n' +
+    '\tOrdinal0 [0x00062594+206228]\n' +
+    '\tOrdinal0 [0x000595FB+169467]\n' +
+    '\tOrdinal0 [0x0004160A+71178]\n' +
+    '\tOrdinal0 [0x00042690+75408]\n' +
+    '\tOrdinal0 [0x00042629+75305]\n' +
+    '\tOrdinal0 [0x001471B7+1143223]\n' +
+    '\tGetHandleVerifier [0x00242B46+507814]\n' +
+    '\tGetHandleVerifier [0x00242864+507076]\n' +
+    '\tGetHandleVerifier [0x00249F47+537511]\n' +
+    '\tGetHandleVerifier [0x00243402+510050]\n' +
+    '\tOrdinal0 [0x0013F29C+1110684]\n' +
+    '\tOrdinal0 [0x0014938B+1151883]\n' +
+    '\tOrdinal0 [0x001494F3+1152243]\n' +
+    '\tOrdinal0 [0x001483F5+1147893]\n' +
+    '\tBaseThreadInitThunk [0x764C6359+25]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x774B7B74+228]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x774B7B44+180]\n' +
+    '\t(No symbol) [0x00000000]\n'
 }
-2020-01-19T00:53:36.568Z WARN webdriver: Request failed due to connect ECONNREFUSED 127.0.0.1:4444
-2020-01-19T00:53:36.568Z INFO webdriver: Retrying 2/3
-2020-01-19T00:53:36.569Z INFO webdriver: [POST] http://127.0.0.1:4444/session
-2020-01-19T00:53:36.569Z INFO webdriver: DATA {
-  capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
-  desiredCapabilities: { browserName: 'chrome' }
+2020-01-24T23:10:26.286Z INFO webdriver: COMMAND navigateTo("http://automationpractice.com/")
+2020-01-24T23:10:26.287Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/url
+2020-01-24T23:10:26.287Z INFO webdriver: DATA { url: 'http://automationpractice.com/' }
+2020-01-24T23:10:29.369Z INFO webdriver: COMMAND maximizeWindow()
+2020-01-24T23:10:29.370Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/window/maximize
+2020-01-24T23:10:33.794Z INFO webdriver: RESULT { height: 1056, width: 1936, x: -8, y: -8 }
+2020-01-24T23:10:33.798Z INFO webdriver: COMMAND findElement("css selector", ".login")
+2020-01-24T23:10:33.799Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:33.799Z INFO webdriver: DATA { using: 'css selector', value: '.login' }
+2020-01-24T23:10:33.847Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '03586e88-cddd-41be-b662-bc12752eaf93'
 }
-2020-01-19T00:53:38.578Z WARN webdriver: Request failed due to connect ECONNREFUSED 127.0.0.1:4444
-2020-01-19T00:53:38.579Z INFO webdriver: Retrying 3/3
-2020-01-19T00:53:38.579Z INFO webdriver: [POST] http://127.0.0.1:4444/session
-2020-01-19T00:53:38.579Z INFO webdriver: DATA {
-  capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
-  desiredCapabilities: { browserName: 'chrome' }
+2020-01-24T23:10:33.853Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-01-24T23:10:33.853Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/execute/sync
+2020-01-24T23:10:33.853Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '03586e88-cddd-41be-b662-bc12752eaf93',
+      ELEMENT: '03586e88-cddd-41be-b662-bc12752eaf93'
+    }
+  ]
 }
+2020-01-24T23:10:33.875Z INFO webdriver: RESULT true
+2020-01-24T23:10:33.877Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-01-24T23:10:33.877Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/execute/sync
+2020-01-24T23:10:33.878Z INFO webdriver: DATA {
+  script: 'return (function isElementClickable(elem) {\n' +
+    '  if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  const isOldEdge = !!window.StyleMedia;\n' +
+    '  const scrollIntoViewFullSupport = !(window.safari || isOldEdge);\n' +
+    '\n' +
+    '  function getOverlappingElement(elem, context = document) {\n' +
+    '    const elemDimension = elem.getBoundingClientRect();\n' +
+    '    const x = elemDimension.left + elem.clientWidth / 2;\n' +
+    '    const y = elemDimension.top + elem.clientHeight / 2;\n' +
+    '    return context.elementFromPoint(x, y);\n' +
+    '  }\n' +
+    '\n' +
+    '  function getOverlappingRects(elem, context = document) {\n' +
+    '    const elems = [];\n' +
+    '    const rects = elem.getClientRects();\n' +
+    '    const rect = rects[0];\n' +
+    '    const x = rect.left + rect.width / 2;\n' +
+    '    const y = rect.top + rect.height / 2;\n' +
+    '    elems.push(context.elementFromPoint(x, y));\n' +
+    '    return elems;\n' +
+    '  }\n' +
+    '\n' +
+    '  function getOverlappingElements(elem, context) {\n' +
+    '    return [getOverlappingElement(elem, context), ...getOverlappingRects(elem, context)];\n' +
+    '  }\n' +
+    '\n' +
+    '  function nodeContains(elem, otherNode) {\n' +
+    '    if (isOldEdge) {\n' +
+    '      let tmpElement = otherNode;\n' +
+    '\n' +
+    '      while (tmpElement) {\n' +
+    '        if (tmpElement === elem) {\n' +
+    '          return true;\n' +
+    '        }\n' +
+    '\n' +
+    '        tmpElement = tmpElement.parentNode;\n' +
+    '\n' +
+    '        if (tmpElement && tmpElement.nodeType === 11 && tmpElement.host) {\n' +
+    '          tmpElement = tmpElement.host;\n' +
+    '        }\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return elem.contains(otherNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  function isOverlappingElementMatch(elementsFromPoint, elem) {\n' +
+    '    if (elementsFromPoint.some(elementFromPoint => elementFromPoint === elem || nodeContains(elem, elementFromPoint))) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    let elemsWithShadowRoot = [...new Set(elementsFromPoint)];\n' +
+    '    elemsWithShadowRoot = elemsWithShadowRoot.filter(x => x && x.shadowRoot && x.shadowRoot.elementFromPoint);\n' +
+    '    let shadowElementsFromPoint = [];\n' +
+    '\n' +
+    '    for (let shadowElement of elemsWithShadowRoot) {\n' +
+    '      shadowElementsFromPoint.push(...getOverlappingElements(elem, shadowElement.shadowRoot));\n' +
+    '    }\n' +
+    '\n' +
+    '    shadowElementsFromPoint = [...new Set(shadowElementsFromPoint)];\n' +
+    '    shadowElementsFromPoint = shadowElementsFromPoint.filter(x => !elementsFromPoint.includes(x));\n' +
+    '\n' +
+    '    if (shadowElementsFromPoint.length === 0) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isOverlappingElementMatch(shadowElementsFromPoint, elem);\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInViewport(elem) {\n' +
+    '    if (!elem.getBoundingClientRect) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    const rect = elem.getBoundingClientRect();\n' +
+    '    const windowHeight = window.innerHeight || document.documentElement.clientHeight;\n' +
+    '    const windowWidth = window.innerWidth || document.documentElement.clientWidth;\n' +
+    '    const vertInView = rect.top <= windowHeight && rect.top + rect.height > 0;\n' +
+    '    const horInView = rect.left <= windowWidth && rect.left + rect.width > 0;\n' +
+    '    return vertInView && horInView;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isClickable(elem) {\n' +
+    '    return isElementInViewport(elem) && elem.disabled !== true && isOverlappingElementMatch(getOverlappingElements(elem), elem);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isClickable(elem)) {\n' +
+    '    elem.scrollIntoView(scrollIntoViewFullSupport ? {\n' +
+    "      block: 'nearest',\n" +
+    "      inline: 'nearest'\n" +
+    '    } : false);\n' +
+    '\n' +
+    '    if (!isClickable(elem)) {\n' +
+    '      elem.scrollIntoView(scrollIntoViewFullSupport ? {\n' +
+    "        block: 'center',\n" +
+    "        inline: 'center'\n" +
+    '      } : true);\n' +
+    '      return isClickable(elem);\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '03586e88-cddd-41be-b662-bc12752eaf93',
+      ELEMENT: '03586e88-cddd-41be-b662-bc12752eaf93'
+    }
+  ]
+}
+2020-01-24T23:10:33.896Z INFO webdriver: RESULT true
+2020-01-24T23:10:33.898Z INFO webdriver: COMMAND elementClick("03586e88-cddd-41be-b662-bc12752eaf93")
+2020-01-24T23:10:33.900Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/03586e88-cddd-41be-b662-bc12752eaf93/click
+2020-01-24T23:10:35.067Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="create-account_form"]/h3")
+2020-01-24T23:10:35.068Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:35.068Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create-account_form"]/h3' }
+2020-01-24T23:10:35.090Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'c0bd28ca-669a-4d8d-91a5-399a450b45b8'
+}
+2020-01-24T23:10:35.094Z INFO webdriver: COMMAND getElementText("c0bd28ca-669a-4d8d-91a5-399a450b45b8")
+2020-01-24T23:10:35.095Z INFO webdriver: [GET] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/c0bd28ca-669a-4d8d-91a5-399a450b45b8/text
+2020-01-24T23:10:35.125Z INFO webdriver: RESULT CREATE AN ACCOUNT
+2020-01-24T23:10:35.129Z INFO webdriver: COMMAND findElement("css selector", "#SubmitCreate")
+2020-01-24T23:10:35.130Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:35.130Z INFO webdriver: DATA { using: 'css selector', value: '#SubmitCreate' }
+2020-01-24T23:10:35.147Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '41109cdf-fb3f-4ce7-91b7-7e4387c1bdd7'
+}
+2020-01-24T23:10:35.150Z INFO webdriver: COMMAND elementClick("41109cdf-fb3f-4ce7-91b7-7e4387c1bdd7")
+2020-01-24T23:10:35.150Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/41109cdf-fb3f-4ce7-91b7-7e4387c1bdd7/click
+2020-01-24T23:10:35.258Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="create_account_error"]/ol/li")
+2020-01-24T23:10:35.260Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:35.260Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create_account_error"]/ol/li' }
+2020-01-24T23:10:35.281Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="create_account_error"]/ol/li"}\n' +
+    '  (Session info: chrome=79.0.3945.130)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x001AA113+1548563]\n' +
+    '\tOrdinal0 [0x0012DDA1+1039777]\n' +
+    '\tOrdinal0 [0x000AE485+517253]\n' +
+    '\tOrdinal0 [0x00048539+99641]\n' +
+    '\tOrdinal0 [0x00063BB0+211888]\n' +
+    '\tOrdinal0 [0x000597B0+169904]\n' +
+    '\tOrdinal0 [0x00062594+206228]\n' +
+    '\tOrdinal0 [0x000595FB+169467]\n' +
+    '\tOrdinal0 [0x0004160A+71178]\n' +
+    '\tOrdinal0 [0x00042690+75408]\n' +
+    '\tOrdinal0 [0x00042629+75305]\n' +
+    '\tOrdinal0 [0x001471B7+1143223]\n' +
+    '\tGetHandleVerifier [0x00242B46+507814]\n' +
+    '\tGetHandleVerifier [0x00242864+507076]\n' +
+    '\tGetHandleVerifier [0x00249F47+537511]\n' +
+    '\tGetHandleVerifier [0x00243402+510050]\n' +
+    '\tOrdinal0 [0x0013F29C+1110684]\n' +
+    '\tOrdinal0 [0x0014938B+1151883]\n' +
+    '\tOrdinal0 [0x001494F3+1152243]\n' +
+    '\tOrdinal0 [0x001483F5+1147893]\n' +
+    '\tBaseThreadInitThunk [0x764C6359+25]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x774B7B74+228]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x774B7B44+180]\n' +
+    '\t(No symbol) [0x00000000]\n'
+}
+2020-01-24T23:10:35.286Z INFO webdriver: COMMAND findElements("xpath", "//*[@id="create_account_error"]/ol/li")
+2020-01-24T23:10:35.286Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:35.286Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create_account_error"]/ol/li' }
+2020-01-24T23:10:35.301Z INFO webdriver: RESULT []
+2020-01-24T23:10:35.787Z INFO webdriver: COMMAND findElements("xpath", "//*[@id="create_account_error"]/ol/li")
+2020-01-24T23:10:35.787Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:35.787Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create_account_error"]/ol/li' }
+2020-01-24T23:10:35.796Z INFO webdriver: RESULT []
+2020-01-24T23:10:36.286Z INFO webdriver: COMMAND findElements("xpath", "//*[@id="create_account_error"]/ol/li")
+2020-01-24T23:10:36.286Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:36.286Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create_account_error"]/ol/li' }
+2020-01-24T23:10:36.296Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '93607811-9ea3-4076-94fd-ab7a96117d3a'
+  }
+]
+2020-01-24T23:10:36.298Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="create_account_error"]/ol/li")
+2020-01-24T23:10:36.298Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:36.298Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create_account_error"]/ol/li' }
+2020-01-24T23:10:36.305Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '93607811-9ea3-4076-94fd-ab7a96117d3a'
+}
+2020-01-24T23:10:36.309Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-01-24T23:10:36.309Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/execute/sync
+2020-01-24T23:10:36.309Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '93607811-9ea3-4076-94fd-ab7a96117d3a',
+      ELEMENT: '93607811-9ea3-4076-94fd-ab7a96117d3a'
+    }
+  ]
+}
+2020-01-24T23:10:36.316Z INFO webdriver: RESULT true
+2020-01-24T23:10:36.316Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="create_account_error"]/ol/li")
+2020-01-24T23:10:36.316Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:36.316Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create_account_error"]/ol/li' }
+2020-01-24T23:10:36.323Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '93607811-9ea3-4076-94fd-ab7a96117d3a'
+}
+2020-01-24T23:10:36.325Z INFO webdriver: COMMAND getElementText("93607811-9ea3-4076-94fd-ab7a96117d3a")
+2020-01-24T23:10:36.325Z INFO webdriver: [GET] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/93607811-9ea3-4076-94fd-ab7a96117d3a/text
+2020-01-24T23:10:36.339Z INFO webdriver: RESULT Invalid email address.
+2020-01-24T23:10:36.340Z INFO webdriver: COMMAND findElement("css selector", "#email_create")
+2020-01-24T23:10:36.340Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:36.340Z INFO webdriver: DATA { using: 'css selector', value: '#email_create' }
+2020-01-24T23:10:36.351Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'a2b9e9d1-6aeb-460d-b87c-b8029261616a'
+}
+2020-01-24T23:10:36.360Z INFO webdriver: COMMAND elementSendKeys("a2b9e9d1-6aeb-460d-b87c-b8029261616a", "test@")
+2020-01-24T23:10:36.360Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/a2b9e9d1-6aeb-460d-b87c-b8029261616a/value
+2020-01-24T23:10:36.361Z INFO webdriver: DATA { text: 'test@' }
+2020-01-24T23:10:36.461Z INFO webdriver: COMMAND findElement("css selector", "#SubmitCreate")
+2020-01-24T23:10:36.461Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:36.461Z INFO webdriver: DATA { using: 'css selector', value: '#SubmitCreate' }
+2020-01-24T23:10:36.472Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '41109cdf-fb3f-4ce7-91b7-7e4387c1bdd7'
+}
+2020-01-24T23:10:36.476Z INFO webdriver: COMMAND elementClick("41109cdf-fb3f-4ce7-91b7-7e4387c1bdd7")
+2020-01-24T23:10:36.476Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/41109cdf-fb3f-4ce7-91b7-7e4387c1bdd7/click
+2020-01-24T23:10:36.551Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="create_account_error"]/ol/li")
+2020-01-24T23:10:36.551Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:36.551Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create_account_error"]/ol/li' }
+2020-01-24T23:10:36.561Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="create_account_error"]/ol/li"}\n' +
+    '  (Session info: chrome=79.0.3945.130)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x001AA113+1548563]\n' +
+    '\tOrdinal0 [0x0012DDA1+1039777]\n' +
+    '\tOrdinal0 [0x000AE485+517253]\n' +
+    '\tOrdinal0 [0x00048539+99641]\n' +
+    '\tOrdinal0 [0x00063BB0+211888]\n' +
+    '\tOrdinal0 [0x000597B0+169904]\n' +
+    '\tOrdinal0 [0x00062594+206228]\n' +
+    '\tOrdinal0 [0x000595FB+169467]\n' +
+    '\tOrdinal0 [0x0004160A+71178]\n' +
+    '\tOrdinal0 [0x00042690+75408]\n' +
+    '\tOrdinal0 [0x00042629+75305]\n' +
+    '\tOrdinal0 [0x001471B7+1143223]\n' +
+    '\tGetHandleVerifier [0x00242B46+507814]\n' +
+    '\tGetHandleVerifier [0x00242864+507076]\n' +
+    '\tGetHandleVerifier [0x00249F47+537511]\n' +
+    '\tGetHandleVerifier [0x00243402+510050]\n' +
+    '\tOrdinal0 [0x0013F29C+1110684]\n' +
+    '\tOrdinal0 [0x0014938B+1151883]\n' +
+    '\tOrdinal0 [0x001494F3+1152243]\n' +
+    '\tOrdinal0 [0x001483F5+1147893]\n' +
+    '\tBaseThreadInitThunk [0x764C6359+25]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x774B7B74+228]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x774B7B44+180]\n' +
+    '\t(No symbol) [0x00000000]\n'
+}
+2020-01-24T23:10:36.564Z INFO webdriver: COMMAND findElements("xpath", "//*[@id="create_account_error"]/ol/li")
+2020-01-24T23:10:36.565Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:36.565Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create_account_error"]/ol/li' }
+2020-01-24T23:10:36.572Z INFO webdriver: RESULT []
+2020-01-24T23:10:37.064Z INFO webdriver: COMMAND findElements("xpath", "//*[@id="create_account_error"]/ol/li")
+2020-01-24T23:10:37.065Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:37.065Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create_account_error"]/ol/li' }
+2020-01-24T23:10:37.073Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '5865c7ec-0801-42ef-a894-8758ed1c87f4'
+  }
+]
+2020-01-24T23:10:37.077Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="create_account_error"]/ol/li")
+2020-01-24T23:10:37.077Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.077Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create_account_error"]/ol/li' }
+2020-01-24T23:10:37.088Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '5865c7ec-0801-42ef-a894-8758ed1c87f4'
+}
+2020-01-24T23:10:37.091Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2020-01-24T23:10:37.091Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/execute/sync
+2020-01-24T23:10:37.091Z INFO webdriver: DATA {
+  script: 'return (function isElementDisplayed(element) {\n' +
+    '  function nodeIsElement(node) {\n' +
+    '    if (!node) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    switch (node.nodeType) {\n' +
+    '      case Node.ELEMENT_NODE:\n' +
+    '      case Node.DOCUMENT_NODE:\n' +
+    '      case Node.DOCUMENT_FRAGMENT_NODE:\n' +
+    '        return true;\n' +
+    '\n' +
+    '      default:\n' +
+    '        return false;\n' +
+    '    }\n' +
+    '  }\n' +
+    '\n' +
+    '  function parentElementForElement(element) {\n' +
+    '    if (!element) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    return enclosingNodeOrSelfMatchingPredicate(element.parentNode, nodeIsElement);\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingNodeOrSelfMatchingPredicate(targetNode, predicate) {\n' +
+    '    for (let node = targetNode; node && node !== targetNode.ownerDocument; node = node.parentNode) if (predicate(node)) {\n' +
+    '      return node;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function enclosingElementOrSelfMatchingPredicate(targetElement, predicate) {\n' +
+    '    for (let element = targetElement; element && element !== targetElement.ownerDocument; element = parentElementForElement(element)) if (predicate(element)) {\n' +
+    '      return element;\n' +
+    '    }\n' +
+    '\n' +
+    '    return null;\n' +
+    '  }\n' +
+    '\n' +
+    '  function cascadedStylePropertyForElement(element, property) {\n' +
+    '    if (!element || !property) {\n' +
+    '      return null;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element instanceof DocumentFragment) {\n' +
+    '      element = element.host;\n' +
+    '    }\n' +
+    '\n' +
+    '    let computedStyle = window.getComputedStyle(element);\n' +
+    '    let computedStyleProperty = computedStyle.getPropertyValue(property);\n' +
+    '\n' +
+    "    if (computedStyleProperty && computedStyleProperty !== 'inherit') {\n" +
+    '      return computedStyleProperty;\n' +
+    '    }\n' +
+    '\n' +
+    '    let parentElement = parentElementForElement(element);\n' +
+    '    return cascadedStylePropertyForElement(parentElement, property);\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementSubtreeHasNonZeroDimensions(element) {\n' +
+    '    let boundingBox = element.getBoundingClientRect();\n' +
+    '\n' +
+    '    if (boundingBox.width > 0 && boundingBox.height > 0) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    "    if (element.tagName.toUpperCase() === 'PATH' && boundingBox.width + boundingBox.height > 0) {\n" +
+    "      let strokeWidth = cascadedStylePropertyForElement(element, 'stroke-width');\n" +
+    '      return !!strokeWidth && parseInt(strokeWidth, 10) > 0;\n' +
+    '    }\n' +
+    '\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow === 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).some(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (nodeIsElement(childNode)) {\n' +
+    '        return elementSubtreeHasNonZeroDimensions(childNode);\n' +
+    '      }\n' +
+    '\n' +
+    '      return false;\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function elementOverflowsContainer(element) {\n' +
+    "    let cascadedOverflow = cascadedStylePropertyForElement(element, 'overflow');\n" +
+    '\n' +
+    "    if (cascadedOverflow !== 'hidden') {\n" +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return true;\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementSubtreeHiddenByOverflow(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!elementOverflowsContainer(element)) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (!element.childNodes.length) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    return Array.from(element.childNodes).every(childNode => {\n' +
+    '      if (childNode.nodeType === Node.TEXT_NODE) {\n' +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!nodeIsElement(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      if (!elementSubtreeHasNonZeroDimensions(childNode)) {\n' +
+    '        return true;\n' +
+    '      }\n' +
+    '\n' +
+    '      return isElementSubtreeHiddenByOverflow(childNode);\n' +
+    '    });\n' +
+    '  }\n' +
+    '\n' +
+    '  function isElementInsideShadowRoot(element) {\n' +
+    '    if (!element) {\n' +
+    '      return false;\n' +
+    '    }\n' +
+    '\n' +
+    '    if (element.parentNode && element.parentNode.host) {\n' +
+    '      return true;\n' +
+    '    }\n' +
+    '\n' +
+    '    return isElementInsideShadowRoot(element.parentNode);\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!isElementInsideShadowRoot(element) && !document.contains(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  switch (element.tagName.toUpperCase()) {\n' +
+    "    case 'BODY':\n" +
+    '      return true;\n' +
+    '\n' +
+    "    case 'SCRIPT':\n" +
+    "    case 'NOSCRIPT':\n" +
+    '      return false;\n' +
+    '\n' +
+    "    case 'OPTGROUP':\n" +
+    "    case 'OPTION':\n" +
+    '      {\n' +
+    "        let enclosingSelectElement = enclosingNodeOrSelfMatchingPredicate(element, e => e.tagName.toUpperCase() === 'SELECT');\n" +
+    '        return isElementDisplayed(enclosingSelectElement);\n' +
+    '      }\n' +
+    '\n' +
+    "    case 'INPUT':\n" +
+    "      if (element.type === 'hidden') {\n" +
+    '        return false;\n' +
+    '      }\n' +
+    '\n' +
+    '      break;\n' +
+    '\n' +
+    '    default:\n' +
+    '      break;\n' +
+    '  }\n' +
+    '\n' +
+    "  if (cascadedStylePropertyForElement(element, 'visibility') !== 'visible') {\n" +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  let hasAncestorWithZeroOpacity = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return Number(cascadedStylePropertyForElement(e, 'opacity')) === 0;\n" +
+    '  });\n' +
+    '  let hasAncestorWithDisplayNone = !!enclosingElementOrSelfMatchingPredicate(element, e => {\n' +
+    "    return cascadedStylePropertyForElement(e, 'display') === 'none';\n" +
+    '  });\n' +
+    '\n' +
+    '  if (hasAncestorWithZeroOpacity || hasAncestorWithDisplayNone) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (!elementSubtreeHasNonZeroDimensions(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  if (isElementSubtreeHiddenByOverflow(element)) {\n' +
+    '    return false;\n' +
+    '  }\n' +
+    '\n' +
+    '  return true;\n' +
+    '}).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '5865c7ec-0801-42ef-a894-8758ed1c87f4',
+      ELEMENT: '5865c7ec-0801-42ef-a894-8758ed1c87f4'
+    }
+  ]
+}
+2020-01-24T23:10:37.099Z INFO webdriver: RESULT true
+2020-01-24T23:10:37.099Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="create_account_error"]/ol/li")
+2020-01-24T23:10:37.100Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.100Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create_account_error"]/ol/li' }
+2020-01-24T23:10:37.110Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '5865c7ec-0801-42ef-a894-8758ed1c87f4'
+}
+2020-01-24T23:10:37.116Z INFO webdriver: COMMAND getElementText("5865c7ec-0801-42ef-a894-8758ed1c87f4")
+2020-01-24T23:10:37.116Z INFO webdriver: [GET] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/5865c7ec-0801-42ef-a894-8758ed1c87f4/text
+2020-01-24T23:10:37.139Z INFO webdriver: RESULT Invalid email address.
+2020-01-24T23:10:37.140Z INFO webdriver: COMMAND findElement("css selector", "#email_create")
+2020-01-24T23:10:37.143Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.143Z INFO webdriver: DATA { using: 'css selector', value: '#email_create' }
+2020-01-24T23:10:37.154Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'a2b9e9d1-6aeb-460d-b87c-b8029261616a'
+}
+2020-01-24T23:10:37.156Z INFO webdriver: COMMAND elementClear("a2b9e9d1-6aeb-460d-b87c-b8029261616a")
+2020-01-24T23:10:37.156Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/a2b9e9d1-6aeb-460d-b87c-b8029261616a/clear
+2020-01-24T23:10:37.198Z INFO webdriver: COMMAND findElement("css selector", "#email_create")
+2020-01-24T23:10:37.198Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.199Z INFO webdriver: DATA { using: 'css selector', value: '#email_create' }
+2020-01-24T23:10:37.215Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'a2b9e9d1-6aeb-460d-b87c-b8029261616a'
+}
+2020-01-24T23:10:37.219Z INFO webdriver: COMMAND elementSendKeys("a2b9e9d1-6aeb-460d-b87c-b8029261616a", "test@")
+2020-01-24T23:10:37.219Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/a2b9e9d1-6aeb-460d-b87c-b8029261616a/value
+2020-01-24T23:10:37.219Z INFO webdriver: DATA { text: 'test@' }
+2020-01-24T23:10:37.290Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="create-account_form"]/div/div[2]")
+2020-01-24T23:10:37.291Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.291Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create-account_form"]/div/div[2]' }
+2020-01-24T23:10:37.336Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'e02689bf-ad83-4c74-ac8a-aa94ef0961a5'
+}
+2020-01-24T23:10:37.339Z INFO webdriver: COMMAND getElementAttribute("e02689bf-ad83-4c74-ac8a-aa94ef0961a5", "class")
+2020-01-24T23:10:37.339Z INFO webdriver: [GET] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/e02689bf-ad83-4c74-ac8a-aa94ef0961a5/attribute/class
+2020-01-24T23:10:37.354Z INFO webdriver: RESULT form-group form-error
+2020-01-24T23:10:37.355Z INFO webdriver: COMMAND findElement("css selector", "#email_create")
+2020-01-24T23:10:37.356Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.356Z INFO webdriver: DATA { using: 'css selector', value: '#email_create' }
+2020-01-24T23:10:37.372Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'a2b9e9d1-6aeb-460d-b87c-b8029261616a'
+}
+2020-01-24T23:10:37.374Z INFO webdriver: COMMAND elementClear("a2b9e9d1-6aeb-460d-b87c-b8029261616a")
+2020-01-24T23:10:37.375Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/a2b9e9d1-6aeb-460d-b87c-b8029261616a/clear
+2020-01-24T23:10:37.435Z INFO webdriver: COMMAND findElement("css selector", "#email_create")
+2020-01-24T23:10:37.435Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.435Z INFO webdriver: DATA { using: 'css selector', value: '#email_create' }
+2020-01-24T23:10:37.450Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'a2b9e9d1-6aeb-460d-b87c-b8029261616a'
+}
+2020-01-24T23:10:37.453Z INFO webdriver: COMMAND elementSendKeys("a2b9e9d1-6aeb-460d-b87c-b8029261616a", "test@email.com")
+2020-01-24T23:10:37.454Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/a2b9e9d1-6aeb-460d-b87c-b8029261616a/value
+2020-01-24T23:10:37.454Z INFO webdriver: DATA { text: 'test@email.com' }
+2020-01-24T23:10:37.583Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="create-account_form"]/h3")
+2020-01-24T23:10:37.583Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.583Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create-account_form"]/h3' }
+2020-01-24T23:10:37.592Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'c0bd28ca-669a-4d8d-91a5-399a450b45b8'
+}
+2020-01-24T23:10:37.595Z INFO webdriver: COMMAND elementClick("c0bd28ca-669a-4d8d-91a5-399a450b45b8")
+2020-01-24T23:10:37.595Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/c0bd28ca-669a-4d8d-91a5-399a450b45b8/click
+2020-01-24T23:10:37.653Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="create-account_form"]/div/div[2]")
+2020-01-24T23:10:37.653Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.653Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="create-account_form"]/div/div[2]' }
+2020-01-24T23:10:37.667Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'e02689bf-ad83-4c74-ac8a-aa94ef0961a5'
+}
+2020-01-24T23:10:37.670Z INFO webdriver: COMMAND getElementAttribute("e02689bf-ad83-4c74-ac8a-aa94ef0961a5", "class")
+2020-01-24T23:10:37.670Z INFO webdriver: [GET] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/e02689bf-ad83-4c74-ac8a-aa94ef0961a5/attribute/class
+2020-01-24T23:10:37.675Z INFO webdriver: RESULT form-group form-ok
+2020-01-24T23:10:37.677Z INFO webdriver: COMMAND findElement("css selector", "#email_create")
+2020-01-24T23:10:37.677Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.677Z INFO webdriver: DATA { using: 'css selector', value: '#email_create' }
+2020-01-24T23:10:37.688Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'a2b9e9d1-6aeb-460d-b87c-b8029261616a'
+}
+2020-01-24T23:10:37.689Z INFO webdriver: COMMAND elementClear("a2b9e9d1-6aeb-460d-b87c-b8029261616a")
+2020-01-24T23:10:37.689Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/a2b9e9d1-6aeb-460d-b87c-b8029261616a/clear
+2020-01-24T23:10:37.720Z INFO webdriver: COMMAND findElement("css selector", "#email_create")
+2020-01-24T23:10:37.720Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.720Z INFO webdriver: DATA { using: 'css selector', value: '#email_create' }
+2020-01-24T23:10:37.729Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'a2b9e9d1-6aeb-460d-b87c-b8029261616a'
+}
+2020-01-24T23:10:37.734Z INFO webdriver: COMMAND elementSendKeys("a2b9e9d1-6aeb-460d-b87c-b8029261616a", "testAuto21@yahoo.com")
+2020-01-24T23:10:37.735Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/a2b9e9d1-6aeb-460d-b87c-b8029261616a/value
+2020-01-24T23:10:37.735Z INFO webdriver: DATA { text: 'testAuto21@yahoo.com' }
+2020-01-24T23:10:37.887Z INFO webdriver: COMMAND findElement("css selector", "#SubmitCreate")
+2020-01-24T23:10:37.887Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.887Z INFO webdriver: DATA { using: 'css selector', value: '#SubmitCreate' }
+2020-01-24T23:10:37.907Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '41109cdf-fb3f-4ce7-91b7-7e4387c1bdd7'
+}
+2020-01-24T23:10:37.909Z INFO webdriver: COMMAND elementClick("41109cdf-fb3f-4ce7-91b7-7e4387c1bdd7")
+2020-01-24T23:10:37.909Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/41109cdf-fb3f-4ce7-91b7-7e4387c1bdd7/click
+2020-01-24T23:10:37.980Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="account-creation_form"]/div[1]/h3")
+2020-01-24T23:10:37.980Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:37.980Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="account-creation_form"]/div[1]/h3' }
+2020-01-24T23:10:38.001Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="account-creation_form"]/div[1]/h3"}\n' +
+    '  (Session info: chrome=79.0.3945.130)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x001AA113+1548563]\n' +
+    '\tOrdinal0 [0x0012DDA1+1039777]\n' +
+    '\tOrdinal0 [0x000AE485+517253]\n' +
+    '\tOrdinal0 [0x00048539+99641]\n' +
+    '\tOrdinal0 [0x00063BB0+211888]\n' +
+    '\tOrdinal0 [0x000597B0+169904]\n' +
+    '\tOrdinal0 [0x00062594+206228]\n' +
+    '\tOrdinal0 [0x000595FB+169467]\n' +
+    '\tOrdinal0 [0x0004160A+71178]\n' +
+    '\tOrdinal0 [0x00042690+75408]\n' +
+    '\tOrdinal0 [0x00042629+75305]\n' +
+    '\tOrdinal0 [0x001471B7+1143223]\n' +
+    '\tGetHandleVerifier [0x00242B46+507814]\n' +
+    '\tGetHandleVerifier [0x00242864+507076]\n' +
+    '\tGetHandleVerifier [0x00249F47+537511]\n' +
+    '\tGetHandleVerifier [0x00243402+510050]\n' +
+    '\tOrdinal0 [0x0013F29C+1110684]\n' +
+    '\tOrdinal0 [0x0014938B+1151883]\n' +
+    '\tOrdinal0 [0x001494F3+1152243]\n' +
+    '\tOrdinal0 [0x001483F5+1147893]\n' +
+    '\tBaseThreadInitThunk [0x764C6359+25]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x774B7B74+228]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x774B7B44+180]\n' +
+    '\t(No symbol) [0x00000000]\n'
+}
+2020-01-24T23:10:38.003Z INFO webdriver: COMMAND findElements("xpath", "//*[@id="account-creation_form"]/div[1]/h3")
+2020-01-24T23:10:38.003Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:38.003Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="account-creation_form"]/div[1]/h3' }
+2020-01-24T23:10:38.047Z INFO webdriver: RESULT []
+2020-01-24T23:10:38.502Z INFO webdriver: COMMAND findElements("xpath", "//*[@id="account-creation_form"]/div[1]/h3")
+2020-01-24T23:10:38.503Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:38.503Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="account-creation_form"]/div[1]/h3' }
+2020-01-24T23:10:38.513Z INFO webdriver: RESULT []
+2020-01-24T23:10:39.004Z INFO webdriver: COMMAND findElements("xpath", "//*[@id="account-creation_form"]/div[1]/h3")
+2020-01-24T23:10:39.004Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:39.005Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="account-creation_form"]/div[1]/h3' }
+2020-01-24T23:10:39.075Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'c0f7ad3e-efe8-40be-87f3-b41e03d31aec'
+  }
+]
+2020-01-24T23:10:39.082Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="account-creation_form"]/div[1]/h3")
+2020-01-24T23:10:39.083Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:39.083Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="account-creation_form"]/div[1]/h3' }
+2020-01-24T23:10:39.115Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'c0f7ad3e-efe8-40be-87f3-b41e03d31aec'
+}
+2020-01-24T23:10:39.118Z INFO webdriver: COMMAND getElementText("c0f7ad3e-efe8-40be-87f3-b41e03d31aec")
+2020-01-24T23:10:39.118Z INFO webdriver: [GET] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/c0f7ad3e-efe8-40be-87f3-b41e03d31aec/text
+2020-01-24T23:10:39.155Z INFO webdriver: RESULT YOUR PERSONAL INFORMATION
+2020-01-24T23:10:39.156Z INFO webdriver: COMMAND findElement("css selector", "#submitAccount")
+2020-01-24T23:10:39.157Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:39.157Z INFO webdriver: DATA { using: 'css selector', value: '#submitAccount' }
+2020-01-24T23:10:39.220Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'abd537ec-a552-42dd-bcc5-618597490d0d'
+}
+2020-01-24T23:10:39.223Z INFO webdriver: COMMAND elementClick("abd537ec-a552-42dd-bcc5-618597490d0d")
+2020-01-24T23:10:39.224Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/abd537ec-a552-42dd-bcc5-618597490d0d/click
+2020-01-24T23:10:40.024Z INFO webdriver: COMMAND findElements("xpath", "//*[@id="center_column"]/div/ol/li")
+2020-01-24T23:10:40.024Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:40.025Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="center_column"]/div/ol/li' }
+2020-01-24T23:10:40.088Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '486ff7da-605a-421f-b08f-cd34e794a119'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '676ac78c-1283-42cf-9218-b2460d3ecadd'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'c4f5285c-e463-4fa3-a7a8-17c63a86f834'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'f7a64bdf-94f0-45a9-a493-3c4eef8b8e4a'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'c41582d9-53fc-41ba-a00e-6883dc842590'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '0e904e44-060c-4aa9-a450-11365e457d8e'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'a5e763ce-3338-4649-bdfe-17e5694eeb99'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'a066cd5d-7e5d-46f9-b511-aeb007209668'
+  }
+]
+2020-01-24T23:10:40.107Z INFO webdriver: COMMAND findElement("css selector", "#customer_firstname")
+2020-01-24T23:10:40.107Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:40.107Z INFO webdriver: DATA { using: 'css selector', value: '#customer_firstname' }
+2020-01-24T23:10:40.123Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '0db69741-bde6-402d-9b47-b1c8288a2fa5'
+}
+2020-01-24T23:10:40.125Z INFO webdriver: COMMAND elementSendKeys("0db69741-bde6-402d-9b47-b1c8288a2fa5", "John")
+2020-01-24T23:10:40.125Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/0db69741-bde6-402d-9b47-b1c8288a2fa5/value
+2020-01-24T23:10:40.125Z INFO webdriver: DATA { text: 'John' }
+2020-01-24T23:10:40.258Z INFO webdriver: COMMAND findElement("css selector", "#submitAccount")
+2020-01-24T23:10:40.258Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:40.258Z INFO webdriver: DATA { using: 'css selector', value: '#submitAccount' }
+2020-01-24T23:10:40.270Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '3d533702-a22e-41f0-9206-71340b5351c1'
+}
+2020-01-24T23:10:40.271Z INFO webdriver: COMMAND elementClick("3d533702-a22e-41f0-9206-71340b5351c1")
+2020-01-24T23:10:40.271Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/3d533702-a22e-41f0-9206-71340b5351c1/click
+2020-01-24T23:10:41.796Z INFO webdriver: COMMAND findElements("xpath", "//*[@id="center_column"]/div/ol/li")
+2020-01-24T23:10:41.796Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:41.797Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="center_column"]/div/ol/li' }
+2020-01-24T23:10:41.832Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '950e1f67-251e-45f6-9846-3d016f6ec4ae'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'a4c56ac3-1d5c-45a8-b6f1-7cc2a40d5d21'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '564ce86d-2f08-4788-b04b-b2f19030b80a'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'cb0fe555-cd50-44a7-af68-2b82cb4b1be7'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': 'b30e34c6-f81c-4e93-a3a1-5bc48075ab35'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '1edcffef-eb41-4c47-a1b9-1fce065677d2'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '50240a53-9bf9-4315-91d2-596129048672'
+  }
+]
+2020-01-24T23:10:41.881Z INFO webdriver: COMMAND findElement("css selector", "#customer_firstname")
+2020-01-24T23:10:41.882Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:41.882Z INFO webdriver: DATA { using: 'css selector', value: '#customer_firstname' }
+2020-01-24T23:10:41.906Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '88e82cee-8229-4d23-b529-c2a1e8df9dda'
+}
+2020-01-24T23:10:41.908Z INFO webdriver: COMMAND elementClear("88e82cee-8229-4d23-b529-c2a1e8df9dda")
+2020-01-24T23:10:41.909Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/88e82cee-8229-4d23-b529-c2a1e8df9dda/clear
+2020-01-24T23:10:41.972Z INFO webdriver: COMMAND findElement("css selector", "#customer_lastname")
+2020-01-24T23:10:41.972Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:41.972Z INFO webdriver: DATA { using: 'css selector', value: '#customer_lastname' }
+2020-01-24T23:10:41.989Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '88d62faa-54fa-40c0-8334-0f39962935e5'
+}
+2020-01-24T23:10:41.991Z INFO webdriver: COMMAND elementClear("88d62faa-54fa-40c0-8334-0f39962935e5")
+2020-01-24T23:10:41.991Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/88d62faa-54fa-40c0-8334-0f39962935e5/clear
+2020-01-24T23:10:42.032Z INFO webdriver: COMMAND findElement("css selector", "#email")
+2020-01-24T23:10:42.032Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:42.032Z INFO webdriver: DATA { using: 'css selector', value: '#email' }
+2020-01-24T23:10:42.042Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'e032a22b-65c1-45ec-bef9-8023016db4d6'
+}
+2020-01-24T23:10:42.044Z INFO webdriver: COMMAND elementClear("e032a22b-65c1-45ec-bef9-8023016db4d6")
+2020-01-24T23:10:42.044Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/e032a22b-65c1-45ec-bef9-8023016db4d6/clear
+2020-01-24T23:10:42.088Z INFO webdriver: COMMAND findElement("css selector", "#passwd")
+2020-01-24T23:10:42.088Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:42.088Z INFO webdriver: DATA { using: 'css selector', value: '#passwd' }
+2020-01-24T23:10:42.105Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '0f3e8ea3-735f-47cc-bc74-2ef8739f9197'
+}
+2020-01-24T23:10:42.106Z INFO webdriver: COMMAND elementClear("0f3e8ea3-735f-47cc-bc74-2ef8739f9197")
+2020-01-24T23:10:42.106Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/0f3e8ea3-735f-47cc-bc74-2ef8739f9197/clear
+2020-01-24T23:10:42.142Z INFO webdriver: COMMAND findElement("css selector", "#days")
+2020-01-24T23:10:42.142Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:42.142Z INFO webdriver: DATA { using: 'css selector', value: '#days' }
+2020-01-24T23:10:42.155Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '28ca4c7e-7d3c-487a-8caf-9100a3764a95'
+}
+2020-01-24T23:10:42.157Z INFO webdriver: COMMAND findElementFromElement("28ca4c7e-7d3c-487a-8caf-9100a3764a95", "xpath", "./option[. = "-"]|./option[normalize-space(text()) = "-"]|./optgroup/option[. = "-"]|./optgroup/option[normalize-space(text()) = "-"]")
+2020-01-24T23:10:42.157Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/28ca4c7e-7d3c-487a-8caf-9100a3764a95/element
+2020-01-24T23:10:42.157Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './option[. = "-"]|./option[normalize-space(text()) = "-"]|./optgroup/option[. = "-"]|./optgroup/option[normalize-space(text()) = "-"]'
+}
+2020-01-24T23:10:42.171Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '449cbdb3-5bf4-4b35-a174-c3855a05ec34'
+}
+2020-01-24T23:10:42.172Z INFO webdriver: COMMAND elementClick("449cbdb3-5bf4-4b35-a174-c3855a05ec34")
+2020-01-24T23:10:42.172Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element/449cbdb3-5bf4-4b35-a174-c3855a05ec34/click
+2020-01-24T23:10:42.239Z INFO webdriver: COMMAND findElement("css selector", "#months-months")
+2020-01-24T23:10:42.239Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:42.239Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:42.253Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"#months-months"}\n' +
+    '  (Session info: chrome=79.0.3945.130)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x001AA113+1548563]\n' +
+    '\tOrdinal0 [0x0012DDA1+1039777]\n' +
+    '\tOrdinal0 [0x000AE485+517253]\n' +
+    '\tOrdinal0 [0x00048539+99641]\n' +
+    '\tOrdinal0 [0x00063BB0+211888]\n' +
+    '\tOrdinal0 [0x000597B0+169904]\n' +
+    '\tOrdinal0 [0x00062594+206228]\n' +
+    '\tOrdinal0 [0x000595FB+169467]\n' +
+    '\tOrdinal0 [0x0004160A+71178]\n' +
+    '\tOrdinal0 [0x00042690+75408]\n' +
+    '\tOrdinal0 [0x00042629+75305]\n' +
+    '\tOrdinal0 [0x001471B7+1143223]\n' +
+    '\tGetHandleVerifier [0x00242B46+507814]\n' +
+    '\tGetHandleVerifier [0x00242864+507076]\n' +
+    '\tGetHandleVerifier [0x00249F47+537511]\n' +
+    '\tGetHandleVerifier [0x00243402+510050]\n' +
+    '\tOrdinal0 [0x0013F29C+1110684]\n' +
+    '\tOrdinal0 [0x0014938B+1151883]\n' +
+    '\tOrdinal0 [0x001494F3+1152243]\n' +
+    '\tOrdinal0 [0x001483F5+1147893]\n' +
+    '\tBaseThreadInitThunk [0x764C6359+25]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x774B7B74+228]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x774B7B44+180]\n' +
+    '\t(No symbol) [0x00000000]\n'
+}
+2020-01-24T23:10:42.254Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:42.255Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:42.255Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:42.266Z INFO webdriver: RESULT []
+2020-01-24T23:10:42.755Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:42.756Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:42.756Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:42.801Z INFO webdriver: RESULT []
+2020-01-24T23:10:43.255Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:43.256Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:43.256Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:43.281Z INFO webdriver: RESULT []
+2020-01-24T23:10:43.755Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:43.756Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:43.756Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:43.786Z INFO webdriver: RESULT []
+2020-01-24T23:10:44.255Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:44.256Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:44.256Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:44.291Z INFO webdriver: RESULT []
+2020-01-24T23:10:44.754Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:44.755Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:44.755Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:44.771Z INFO webdriver: RESULT []
+2020-01-24T23:10:45.255Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:45.255Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:45.256Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:45.280Z INFO webdriver: RESULT []
+2020-01-24T23:10:45.755Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:45.755Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:45.755Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:45.780Z INFO webdriver: RESULT []
+2020-01-24T23:10:46.255Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:46.255Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:46.255Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:46.279Z INFO webdriver: RESULT []
+2020-01-24T23:10:46.755Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:46.755Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:46.755Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:46.770Z INFO webdriver: RESULT []
+2020-01-24T23:10:47.256Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:47.257Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:47.257Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:47.282Z INFO webdriver: RESULT []
+2020-01-24T23:10:47.755Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:47.755Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:47.755Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:47.763Z INFO webdriver: RESULT []
+2020-01-24T23:10:48.254Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:48.255Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:48.255Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:48.280Z INFO webdriver: RESULT []
+2020-01-24T23:10:48.754Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:48.755Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:48.755Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:48.766Z INFO webdriver: RESULT []
+2020-01-24T23:10:49.256Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:49.256Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:49.256Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:49.282Z INFO webdriver: RESULT []
+2020-01-24T23:10:49.753Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:49.754Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:49.754Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:49.762Z INFO webdriver: RESULT []
+2020-01-24T23:10:50.256Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:50.257Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:50.257Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:50.269Z INFO webdriver: RESULT []
+2020-01-24T23:10:50.755Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:50.755Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:50.756Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:50.779Z INFO webdriver: RESULT []
+2020-01-24T23:10:51.255Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:51.256Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:51.256Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:51.281Z INFO webdriver: RESULT []
+2020-01-24T23:10:51.755Z INFO webdriver: COMMAND findElements("css selector", "#months-months")
+2020-01-24T23:10:51.755Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:51.755Z INFO webdriver: DATA { using: 'css selector', value: '#months-months' }
+2020-01-24T23:10:51.768Z INFO webdriver: RESULT []
+2020-01-24T23:10:52.299Z INFO webdriver: COMMAND findElement("css selector", ".info-account")
+2020-01-24T23:10:52.300Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/element
+2020-01-24T23:10:52.300Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:52.322Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":".info-account"}\n' +
+    '  (Session info: chrome=79.0.3945.130)',
+  stacktrace: 'Backtrace:\n' +
+    '\tOrdinal0 [0x001AA113+1548563]\n' +
+    '\tOrdinal0 [0x0012DDA1+1039777]\n' +
+    '\tOrdinal0 [0x000AE485+517253]\n' +
+    '\tOrdinal0 [0x00048539+99641]\n' +
+    '\tOrdinal0 [0x00063BB0+211888]\n' +
+    '\tOrdinal0 [0x000597B0+169904]\n' +
+    '\tOrdinal0 [0x00062594+206228]\n' +
+    '\tOrdinal0 [0x000595FB+169467]\n' +
+    '\tOrdinal0 [0x0004160A+71178]\n' +
+    '\tOrdinal0 [0x00042690+75408]\n' +
+    '\tOrdinal0 [0x00042629+75305]\n' +
+    '\tOrdinal0 [0x001471B7+1143223]\n' +
+    '\tGetHandleVerifier [0x00242B46+507814]\n' +
+    '\tGetHandleVerifier [0x00242864+507076]\n' +
+    '\tGetHandleVerifier [0x00249F47+537511]\n' +
+    '\tGetHandleVerifier [0x00243402+510050]\n' +
+    '\tOrdinal0 [0x0013F29C+1110684]\n' +
+    '\tOrdinal0 [0x0014938B+1151883]\n' +
+    '\tOrdinal0 [0x001494F3+1152243]\n' +
+    '\tOrdinal0 [0x001483F5+1147893]\n' +
+    '\tBaseThreadInitThunk [0x764C6359+25]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x774B7B74+228]\n' +
+    '\tRtlGetAppContainerNamedObjectPath [0x774B7B44+180]\n' +
+    '\t(No symbol) [0x00000000]\n'
+}
+2020-01-24T23:10:52.332Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:52.332Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:52.333Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:52.384Z INFO webdriver: RESULT []
+2020-01-24T23:10:52.830Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:52.831Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:52.831Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:52.852Z INFO webdriver: RESULT []
+2020-01-24T23:10:53.331Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:53.332Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:53.332Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:53.361Z INFO webdriver: RESULT []
+2020-01-24T23:10:53.832Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:53.833Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:53.833Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:53.859Z INFO webdriver: RESULT []
+2020-01-24T23:10:54.331Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:54.331Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:54.331Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:54.358Z INFO webdriver: RESULT []
+2020-01-24T23:10:54.831Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:54.831Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:54.832Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:54.859Z INFO webdriver: RESULT []
+2020-01-24T23:10:55.331Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:55.332Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:55.333Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:55.358Z INFO webdriver: RESULT []
+2020-01-24T23:10:55.832Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:55.832Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:55.833Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:55.857Z INFO webdriver: RESULT []
+2020-01-24T23:10:56.331Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:56.332Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:56.332Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:56.358Z INFO webdriver: RESULT []
+2020-01-24T23:10:56.832Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:56.832Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:56.833Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:56.860Z INFO webdriver: RESULT []
+2020-01-24T23:10:57.331Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:57.332Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:57.332Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:57.358Z INFO webdriver: RESULT []
+2020-01-24T23:10:57.831Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:57.831Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:57.831Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:57.841Z INFO webdriver: RESULT []
+2020-01-24T23:10:58.331Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:58.331Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:58.331Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:58.346Z INFO webdriver: RESULT []
+2020-01-24T23:10:58.831Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:58.831Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:58.831Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:58.854Z INFO webdriver: RESULT []
+2020-01-24T23:10:59.331Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:59.332Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:59.332Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:59.361Z INFO webdriver: RESULT []
+2020-01-24T23:10:59.831Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:10:59.832Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:10:59.832Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:10:59.859Z INFO webdriver: RESULT []
+2020-01-24T23:11:00.331Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:11:00.332Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:11:00.332Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:11:00.362Z INFO webdriver: RESULT []
+2020-01-24T23:11:00.831Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:11:00.832Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:11:00.832Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:11:00.859Z INFO webdriver: RESULT []
+2020-01-24T23:11:01.330Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:11:01.331Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:11:01.331Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:11:01.355Z INFO webdriver: RESULT []
+2020-01-24T23:11:01.832Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:11:01.833Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:11:01.833Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:11:01.860Z INFO webdriver: RESULT []
+2020-01-24T23:11:02.331Z INFO webdriver: COMMAND findElements("css selector", ".info-account")
+2020-01-24T23:11:02.332Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/elements
+2020-01-24T23:11:02.332Z INFO webdriver: DATA { using: 'css selector', value: '.info-account' }
+2020-01-24T23:11:02.348Z INFO webdriver: COMMAND getLogTypes()
+2020-01-24T23:11:02.348Z INFO webdriver: [GET] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/se/log/types
+2020-01-24T23:11:02.368Z INFO webdriver: RESULT []
+2020-01-24T23:11:02.371Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2020-01-24T23:11:02.372Z INFO webdriver: COMMAND getLogs("browser")
+2020-01-24T23:11:02.372Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/se/log
+2020-01-24T23:11:02.372Z INFO webdriver: DATA { type: 'browser' }
+2020-01-24T23:11:02.373Z INFO webdriver: COMMAND getLogs("driver")
+2020-01-24T23:11:02.374Z INFO webdriver: [POST] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87/se/log
+2020-01-24T23:11:02.374Z INFO webdriver: DATA { type: 'driver' }
+2020-01-24T23:11:02.379Z INFO webdriver: RESULT []
+2020-01-24T23:11:02.382Z INFO webdriver: RESULT [
+  {
+    level: 'WARNING',
+    message: 'Timed out connecting to Chrome, retrying...\n',
+    timestamp: 1579907421460
+  },
+  {
+    level: 'WARNING',
+    message: 'Timed out connecting to Chrome, retrying...\n',
+    timestamp: 1579907431395
+  }
+]
+2020-01-24T23:11:02.391Z INFO webdriver: COMMAND deleteSession()
+2020-01-24T23:11:02.392Z INFO webdriver: [DELETE] http://127.0.0.1:4444/session/0c4e63f62df774f47ee2fcefc6949f87

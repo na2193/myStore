@@ -1,5 +1,5 @@
-2020-01-20T01:11:19.667Z INFO @wdio/cli:launcher: Run onPrepare hook
-2020-01-20T01:11:20.208Z INFO @wdio/local-runner: Start worker 0-0 with arg: wdio.conf.js,Register.spec
-2020-01-20T01:11:39.805Z INFO @wdio/cli:launcher: Run onComplete hook
-2020-01-20T01:11:39.852Z INFO @wdio/local-runner: Shutting down spawned worker
-2020-01-20T01:11:40.104Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2020-01-27T00:37:59.451Z INFO @wdio/cli:launcher: Run onPrepare hook
+2020-01-27T00:37:59.975Z INFO @wdio/local-runner: Start worker 0-0 with arg: wdio.conf.js,--spec,Register.spec.js
+2020-01-27T00:38:37.168Z INFO @wdio/cli:launcher: Run onComplete hook
+2020-01-27T00:38:37.367Z INFO @wdio/local-runner: Shutting down spawned worker
+2020-01-27T00:38:37.619Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

@@ -20,12 +20,15 @@ describe('Validate error messages', () => {
     });
 
     it('Enter valid email and no password, validate error message', () => {
+        SignIn.email.clearValue();
         SignIn.password.addValue("asdf");
         SignIn.signInBtn.click();
         expect(SignIn.errMsg.getText()).to.equal('An email address required.');
     });
     
     it('Enter valid email format and incorrect password, validate error message', () => {
+        SignIn.email.clearValue();
+        SignIn.password.clearValue();
         SignIn.signIn('johnDoe21@yahoo.com', 'Password');
         expect(SignIn.errMsg.getText()).to.equal('Authentication failed.');
     });
@@ -33,6 +36,8 @@ describe('Validate error messages', () => {
 
 describe('Sigin Successfully', () => {
     it('Should enter email and password and sign in successfully', () => {
+        SignIn.email.clearValue();
+        SignIn.password.clearValue();
         SignIn.signIn('johnDoe21@yahoo.com', 'JohnDoe1');
         SignIn.waitUntilElementExists(SignIn.myAccountInfo);
         expect(SignIn.myAccountInfo.getText()).to.equal('Welcome to your account. Here you can manage all of your personal information and orders.');
